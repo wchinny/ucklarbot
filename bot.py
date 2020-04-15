@@ -28,9 +28,9 @@ async def pic(ctx) :
     pics = ['ucklar_bowtie.jpg', 'ucklar_linkedin.png', 'ucklar_esports.png', 'ucklar_pimp.jpg', 'ucklar_sleep.jpg']
     await ctx.send(file=discord.File(random.choice(pics)))
 
-@bot.command(name='cbaUcklar', help='<cbaUcklar numAmount>, prints out cbaUcklar however many times you want')
-async def cbaUcklar(ctx, amt: int) :
-    temp = [':ucklar2: ' for _ in range(amt)]
-    await ctx.send(''.join(temp))
+# @bot.command(name='cbaUcklar', help='<cbaUcklar numAmount>, prints out cbaUcklar however many times you want')
+# async def cbaUcklar(ctx, amt: int) :
+#     temp = [':ucklar2: ' for _ in range(amt)]
+#     await ctx.send(''.join(temp))
 
 bot.run(TOKEN)
