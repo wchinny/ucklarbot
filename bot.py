@@ -30,7 +30,7 @@ async def pic(ctx) :
 
 @bot.command(name='cbaUcklar', help='<cbaUcklar numAmount>, prints out cbaUcklar however many times you want')
 async def cbaUcklar(ctx, amt: int) :
-    temp = [':eyes: ' for _ in range(amt)]
+    temp = [':ucklar2: ' for _ in range(amt)]
     await ctx.send(''.join(temp))
 
 bot.run(TOKEN)
