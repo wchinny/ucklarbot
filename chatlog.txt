@@ -1,0 +1,28 @@
+this
+is
+logging
+the
+chat
+lmao
+sounds
+good
+hell
+yeah
+brother
+ucklarbot praise
+ucklarbot praise
+ucklarbot help
+```
+​No Category:
+  help    Shows this message
+  pasta   Prints out the infamous Ucklar pasta
+  picture Self explanatory
+  quote   Prints out an Ucklar quote, might be in all caps
+
+Type ucklarbot help command for more info on a command.
+You can also type ucklarbot help category for more info on a category.
+```
+ucklarbot help
+ucklarbot help
+ucklarbot picture
+ucklarbot help

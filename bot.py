@@ -1,4 +1,3 @@
-# bot.py
 import os
 import random
 import discord
@@ -19,7 +18,7 @@ async def pasta(ctx) :
 
 @bot.command(name='quote', help='Prints out an Ucklar quote, might be in all caps')
 async def quote(ctx) :
-    quotes = ['OOH BABY A TRIPLE', 'WHAT DO YOU MEAN', 'that is not true', 'UNBELIEVABLE']
+    quotes = ['OOH BABY A TRIPLE', 'WHAT DO YOU MEAN', 'that is not true', 'UNBELIEVABLE', 'This Ryze couldnt even graduate 8th grade']
     response = random.choice(quotes)
     await ctx.send(response)
 
@@ -28,9 +27,26 @@ async def pic(ctx) :
     pics = ['ucklar_bowtie.jpg', 'ucklar_linkedin.png', 'ucklar_esports.png', 'ucklar_pimp.jpg', 'ucklar_sleep.jpg']
     await ctx.send(file=discord.File(random.choice(pics)))
 
-# @bot.command(name='cbaUcklar', help='<cbaUcklar numAmount>, prints out cbaUcklar however many times you want')
-# async def cbaUcklar(ctx, amt: int) :
-#     temp = [':ucklar2: ' for _ in range(amt)]
-#     await ctx.send(''.join(temp))
+@bot.command(name='praise', help='Praises the lord')
+async def praise(ctx) :
+    pasta_pool= [
+        'Ucklar <:cbaUcklar:700157400744722513> isn\'t so great? Are you kidding me? When was the last time you saw a player with such an ability and movement with his skills? Ucklar <:cbaUcklar:700157400744722513> puts the game on another level, and we will be blessed if we ever see a player with his skill and passion for the game again. Faker breaks records. Lebron breaks records. Ucklar <:cbaUcklar:700157400744722513> breaks the rules. You can keep your statistics. I prefer the magic. And his haircut.',
+        'if ucklar <:cbaUcklar:700157400744722513> has million number of fans i am one of them. if ucklar <:cbaUcklar:700157400744722513> has ten fans i am one of them. if ucklar <:cbaUcklar:700157400744722513> has no fans. that means i am no more on the earth. if world against ucklar <:cbaUcklar:700157400744722513> , i am against the world. i love ucklar <:cbaUcklar:700157400744722513> till my last breath... die hard fan of ucklar <:cbaUcklar:700157400744722513> . Hit like if u think ucklar <:cbaUcklar:700157400744722513> best & smart in the world'
+    ]
+    response = random.choice(pasta_pool)
+    await ctx.send(response)
+
+@bot.command(name='cbaUcklar', help='<cbaUcklar> times whatever amount you want. Max = 50')
+async def cbaUcklar(ctx, amt: int) :
+    temp = ['<:cbaUcklar:700157400744722513>' for _ in range(amt)]
+    response = ''.join(temp)
+    await ctx.send(response)
+
+# @bot.event
+# async def on_message(message):
+#     f = open('chatlog.txt', 'a+')
+#     f.write('{}\n'.format(message.content))
+#     f.close()
+
 
 bot.run(TOKEN)
