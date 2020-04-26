@@ -1,0 +1,38 @@
+{
+    "pasta":{
+        "help": "Prints out the infamous Ucklar pasta", 
+        "message": "Hello Hello, I'm Ucklar~. I found this community on the league forums and it seems fairly interesting. I'm bronze 1 ;__;, and want more people to play with! I'm 15, although I'm mature for my age and you'll never even know I'm that young. I plan to go to college for editing or anything dealing with film except the acting x_x. I'm looking forward to being apart of this community! Also, I'd like to become a full member. My IGN is Ucklar, and that is also my name on teamspeak~"
+    },
+    "quote": {
+        "help": "Prints out an Ucklar quote, might be in all caps",
+        "message": [
+            "OOH BABY A TRIPLE",
+            "WHAT DO YOU MEAN",
+            "that is not true",
+            "UNBELIEVABLE",
+            "This Ryze couldnt even graduate 8th grade"
+        ]
+    },
+    "picture": {
+        "help": "Self explanatory",
+        "message": [
+            'ucklar_bowtie.jpg',
+            'ucklar_linkedin.png',
+            'ucklar_esports.png',
+            'ucklar_pimp.jpg',
+            'ucklar_sleep.jpg',
+            'ucklar_superbowl.png'
+        ]
+    },
+    "praise": {
+        "help": "Praises the lord",
+        "message": [
+            "Ucklar <:cbaUcklar:700157400744722513> isn't so great? Are you kidding me? When was the last time you saw a player with such an ability and movement with his skills? Ucklar <:cbaUcklar:700157400744722513> puts the game on another level, and we will be blessed if we ever see a player with his skill and passion for the game again. Faker breaks records. Lebron breaks records. Ucklar <:cbaUcklar:700157400744722513> breaks the rules. You can keep your statistics. I prefer the magic. And his haircut.",
+            "if ucklar <:cbaUcklar:700157400744722513> has million number of fans i am one of them. if ucklar <:cbaUcklar:700157400744722513> has ten fans i am one of them. if ucklar <:cbaUcklar:700157400744722513> has no fans. that means i am no more on the earth. if world against ucklar <:cbaUcklar:700157400744722513> , i am against the world. i love ucklar <:cbaUcklar:700157400744722513> till my last breath... die hard fan of ucklar <:cbaUcklar:700157400744722513> . Hit like if u think ucklar <:cbaUcklar:700157400744722513> best & smart in the world"
+        ],
+    }
+    "cbaUcklar": {
+        "help": "<cbaUcklar> times whatever amount you want. Max = 50",
+        "message": "<:cbaUcklar:700157400744722513>"
+    }
+}
