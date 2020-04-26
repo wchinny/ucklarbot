@@ -24,7 +24,7 @@ async def quote(ctx) :
 
 @bot.command(name='picture', help='Self explanatory')
 async def pic(ctx) :
-    pics = ['ucklar_bowtie.jpg', 'ucklar_linkedin.png', 'ucklar_esports.png', 'ucklar_pimp.jpg', 'ucklar_sleep.jpg']
+    pics = ['ucklar_bowtie.jpg', 'ucklar_linkedin.png', 'ucklar_esports.png', 'ucklar_pimp.jpg', 'ucklar_sleep.jpg', 'ucklar_superbowl.png']
     await ctx.send(file=discord.File(random.choice(pics)))
 
 @bot.command(name='praise', help='Praises the lord')
