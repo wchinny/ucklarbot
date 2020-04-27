@@ -30,9 +30,19 @@ async def pasta(ctx):
 
 
 @bot.command(name="picture", help=responses["picture"]["help"])
-async def pic(ctx):
-    pics = responses["picture"]["message"]
-    await ctx.send(file=discord.File(random.choice(pics)))
+async def pic(ctx, name=None):
+    if name:
+        name_png = 'ucklar_' + name + '.png'
+        name_jpg = 'ucklar_' + name + '.jpg'
+        if name_png in responses["picture"]["message"]:
+            await ctx.send(file=discord.File(name_png))
+        elif name_jpg in responses["picture"]["message"]:
+            await ctx.send(file=discord.File(name_jpg))
+        else:
+            await ctx.send("Hmm. I couldn't find that Ucklar.")
+    else:
+        pics = responses["picture"]["message"]
+        await ctx.send(file=discord.File(random.choice(pics)))
 
 
 @bot.command(name="praise", help=responses["praise"]["help"])
@@ -42,9 +52,9 @@ async def praise(ctx):
     await ctx.send(response)
 
 
-@bot.command(name="quote", help=responses["quotes"]["help"])
+@bot.command(name="quote", help=responses["quote"]["help"])
 async def quote(ctx):
-    quotes = responses["quotes"]["message"]
+    quotes = responses["quote"]["message"]
     response = random.choice(quotes)
     await ctx.send(response)
 
